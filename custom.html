@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark One Custom Program - Studio Q</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/typography.css">
+    <link rel="stylesheet" href="style/media-queries.css">
+</head>
+<body class="bg-black">
+    <header class="flex justify-space align-items-center max-w-1440 text-white">
+        <a href="index.html" class="flex gap-15 align-items-center">
+            <img class="invert-colors logo" src="img/logo.png" width="80px">
+            <span class="font-xl">Studio Q</span>
+        </a>
+        <ul class="flex gap-15 font-lg navbar">
+            <li class="relative submenu-container hover-underline">
+                <a href="javascript:void(0)" class="relative">PRODUCTS</a>
+                <div class="hidden absolute submenu"></div>
+            </li>
+            <li class="hover-underline">
+                <a href="limited.html">LIMITED</a>
+            </li>
+            <li class="hover-underline">
+                <a href="custom.html">CUSTOM</a>
+            </li>
+            <li class="hover-underline">
+                <a href="about.html">ABOUT US</a>
+            </li>
+            <li class="cart-button hover-underline">
+                <a href="javascript:void(0)">CART (<span class="counter"></span>)</a>
+            </li>
+        </ul>
+        <div id="sidebar-toggle" class="pointer flex-col gap-5 justify-center relative transition">
+            <img src="img/toggle-line.png" width="20" id="line-1" class="transition">
+            <img src="img/toggle-line.png" width="20" id="line-2" class="transition">
+        </div>
+    </header>
+    <nav id="sidebar" class="hidden bg-white">
+        <ul class="flex flex-col font-lg">
+            <li class="pointer">
+                <a class="width-full" href="index.html">HOME</a>
+            </li>
+            <li class="pointer relative" onclick="openSubmenu(this)">
+                <a href="javascript:void(0)" class="relative width-full">PRODUCTS</a>
+                <div class="submenu hidden text-white"></div>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="limited.html">LIMITED</a>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="custom.html">CUSTOM</a>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="about.html">ABOUT US</a>
+            </li>
+            <li class="pointer cart-button">
+                <a class="width-full" href="javascript:void(0)">CART (<span class="counter"></span>)</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="flex flex-col gap-5 justify-space bg-light cart transition">
+        <div>
+            <p class="font-lg text-center">YOUR CART</p>
+            <hr>
+        </div>
+        <div id="cart-products-container" class="relative flex-grow-1 y-scroll">
+        </div>
+        <div class="flex flex-col gap-5">
+            <div class="flex justify-space">
+                <p>Subtotal</p>
+                <p id="subtotal">$</p>
+            </div>
+            <div class="flex gap-5">
+                <button id="checkout" class="button bg-dark-green transition text-white basis-1-3" onclick="checkout()">Checkout</button>
+                <button class="button basis-1-3" id="empty-cart">Empty Cart</button>
+                <button class="button basis-1-3" id="close-cart">Close</button>
+            </div>
+        </div>
+    </section>
+    <main class="y-padding-30 bg-light">
+        <div class="max-w-1440 flex flex-col gap-15 align-items-center x-padding-20">
+            <img width="50%" src="img/Color Row Transparent.webp">
+            <p class="font-xl"><b>Mark One Custom Program</b></p>
+            <p class="text-center width-half">We offer customization of our Mark One pen for orders of 100 units or more. We will guide you through the process of creating a Mark One that is truly custom made for your brand. Perfect for company gifts, resellers, new hire kits, or anyone wanting to make an impression with a thoughtfully designed object.</p>
+            <a class="button bg-dark-green text-white font-lg" href="mailto:hello@studioq.com?subject=Custom Mark One">Inquire</a>
+        </div>
+    </main>
+    <section class="y-padding-30 bg-light">
+        <div class="max-w-1440 grid products-grid gap-5">
+            <img width="100%" src="img/MK1 No 003 Greenery.jpg">
+            <img width="100%" src="img/MK1 SE21 IRL Colors.jpg">
+            <img width="100%" src="img/Red on Red SM.webp">
+            <img width="100%" src="img/MK1 LE003 Three Colors.jpg">
+            <img width="100%" src="img/004 Top Con.jpg">
+            <img width="100%" src="img/Color Testing SM.webp">
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="relative">
+            <div class="x-padding-20">
+                <div class="flex gap-15 align-items-center width-2-3 max-w-1440 small-flex-col">
+                    <div class="flex flex-col gap-5 align-items-center basis-half y-padding-30">
+                        <img src="img/engraving.png" width="20%">
+                        <p class="font-xl">Engraved Logo</p>
+                        <p class="font-lg">A subtle deboss.</p>
+                        <p>How great will your logo look on the barrel of the Mark One? The logo is laser engraved in the metal body before the Cerakote is applied, giving a subtle and bespoke look. We will help tweak your logo if necessary to make sure it looks great as an engraving.</p>
+                    </div>
+                    <div class="basis-half align-self-end">
+                        <img width="100%" src="img/Mark One Custom Logos.webp">
+                    </div>
+                </div>
+                <div class="bottom-gradient absolute"></div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="x-padding-20">
+                <div class="flex row-reverse gap-15 align-items-center width-2-3 max-w-1440 small-flex-col">
+                    <div class="flex flex-col gap-5 align-items-center basis-half y-padding-30">
+                        <img src="img/color.png" width="20%">
+                        <p class="font-xl">Body Color</p>
+                        <p class="font-lg">Choose or mix your own.</p>
+                        <p>Mark One is coated in a ceramic polymer coating called Cerakote, which comes in a ton of colors. However, much like paint, custom colors can also be formulated to get you exactly what you want. If your brand has a specific color, give us the Pantone and we can take it from there.</p>
+                    </div>
+                    <div class="basis-half align-self-end">
+                        <img width="100%" src="img/Swatches Circle.jpg.webp">
+                    </div>
+                </div>
+                <div class="bottom-gradient absolute"></div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="x-padding-20">
+                <div class="flex gap-15 align-items-center width-2-3 max-w-1440 small-flex-col">
+                    <div class="flex flex-col gap-5 align-items-center basis-half y-padding-30">
+                        <img src="img/knock.png" width="20%">
+                        <p class="font-xl">Knock Color</p>
+                        <p class="font-lg">Add an accent.</p>
+                        <p>The "knock,” or clicky part of the pen can be coated with a process called PVD (physical vapor deposition, literally vaporized metal). The color options are limited, but look amazing and are very durable.</p>
+                    </div>
+                    <div class="basis-half align-self-end">
+                        <img width="100%" src="img/Knock PVD Colors.webp">
+                    </div>
+                </div>
+                <div class="bottom-gradient absolute"></div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="x-padding-20">
+                <div class="flex row-reverse gap-15 align-items-center width-2-3 max-w-1440 small-flex-col">
+                    <div class="flex flex-col gap-5 align-items-center basis-half y-padding-30">
+                        <img src="img/packaging.png" width="20%">
+                        <p class="font-xl">Packaging</p>
+                        <p class="font-lg">A personal touch.</p>
+                        <p>Every Mark One is assembled by hand here in our Austin studio. As such, we can work together to add any inserts or additional messaging to the packaging. Standard for each order is a custom sticker on the outer packaging, but we can get creative together.</p>
+                    </div>
+                    <div class="basis-half align-self-end">
+                        <img width="100%" src="img/Assembly Circle.webp">
+                    </div>
+                </div>
+                <div class="bottom-gradient absolute"></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light x-padding-20">
+        <div class="max-w-1440 width-half y-padding-30 flex flex-col gap-15">
+            <p class="text-center font-xl"><b>The Details:</b></p>
+            <ul class="flex flex-col gap-5 font-lg">
+                <li class="list-disc">
+                    <p><b>Base Price: $65</b>(Minimum Order Quantity: 100) includes the pen body with a Cerakote color of your choice, a silver knock, and a black Schmidt P8126 refill. The base price also includes the standard Mark One packaging with a custom sticker for your edition.</p>
+                </li>
+                <li class="list-disc">
+                    <p><b>Custom Engraving: +$5 </b> (Minimum Order Quantity: 100) Add a laser etched logo to the pen, placed on the end near the knock. Cerakote is applied after the engraving, to achieve a clean, subtle look.</p>
+                </li>
+                <li class="list-disc">
+                    <p><b>PVD knock coating: +$5 </b>(Minimum Order Quantity: 300) If you want a color other than silver for the knock, our PVD supplier offers many metallic color options.</p>
+                </li>
+                <li class="list-disc">
+                    <p><b>Payment: </b>(Minimum Order Quantity: 300) 50% required to initiate order. The remainder upon delivery.</p>
+                </li>
+                <li class="list-disc">
+                    <p><b>Timeline: </b>Completed pens will be delivered 8-10 weeks after we receive the first 50% down payment, barring any unforeseen supply chain slowdowns.</p>
+                </li>
+                <li class="list-disc">
+                    <p><b>Terms: </b>We will order 10% more parts than the quantity you request. This overage is to account for any parts that are rejected during QC. We will assemble as many pens as we can, and you will need to purchase however many we make, which will likely end up being 5-8% over your asking quantity.</p>
+                </li>
+            </ul>
+            <a class="button bg-dark-green text-white font-lg align-self-center" href="mailto:hello@studioq.com?subject=Custom Mark One">Inquire</a>
+        </div>
+    </section>
+    <footer class="flex flex-col gap-15 text-white align-items-center y-padding-30">
+        <div class="flex gap-15 small-flex-col">
+            <div class="flex flex-col gap-5">
+                <p class="text-lg"><b>NEWSLETTER</b></p>
+                <p class="uppercase font-s">Join our infrequently used, <br> only on special occasions, non-spammy newsletter.</p>
+                <div class="flex gap-5">
+                    <input type="text">
+                    <button class="button pointer bg-dark-green text-white transition" type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div>
+                    <p class="text-lg"><b>CONTACT US</b></p>
+                    <a href="mailto:hello@studioq.com">hello@studioq.com</a>
+                    <p>PHONE: 0498 4568456 543</p>
+                </div>
+                <div>
+                    <p>P.O. Box 90723 </p>
+                    <p>Austin, TX 78709-0723</p>
+                    <p>USA</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <p><b>FOLLOW US</b></p>
+                <a class="hover-underline" href="#">FACEBOOK</a>
+                <a class="hover-underline" href="#">TWITTER</a>
+                <a class="hover-underline" href="#">PODCAST</a>
+                <a class="hover-underline" href="#">INSTAGRAM</a>
+            </div>
+        </div>
+        <p>Copyright 2023 Studio Q.</p>
+    </footer>
+</body>
+<script src="js/sidebar.js"></script>
+<script src="js/fetchSubmenus.js"></script>
+<script src="js/cart.js"></script>
+</html>

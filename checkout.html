@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Studio Q</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/typography.css">
+    <link rel="stylesheet" href="style/media-queries.css">
+</head>
+<body class="bg-black">
+    <header class="flex justify-space align-items-center max-w-1440 text-white">
+        <a href="index.html" class="flex gap-15 align-items-center">
+            <img class="invert-colors logo" width="80px" src="img/logo.png">
+            <span class="font-xl">Studio Q</span>
+        </a>
+        <ul class="flex gap-15 font-lg navbar">
+            <li class="relative submenu-container hover-underline">
+                <a href="javascript:void(0)" class="relative">PRODUCTS</a>
+                <div class="hidden absolute submenu"></div>
+            </li>
+            <li class="hover-underline">
+                <a href="limited.html">LIMITED</a>
+            </li>
+            <li class="hover-underline">
+                <a href="custom.html">CUSTOM</a>
+            </li>
+            <li class="hover-underline">
+                <a href="about.html">ABOUT US</a>
+            </li>
+        </ul>
+        <div id="sidebar-toggle" class="pointer flex-col gap-5 justify-center relative transition">
+            <img src="img/toggle-line.png" width="20" id="line-1" class="transition">
+            <img src="img/toggle-line.png" width="20" id="line-2" class="transition">
+        </div>
+    </header>
+    <nav id="sidebar" class="hidden bg-white">
+        <ul class="flex flex-col font-lg">
+            <li class="pointer">
+                <a class="width-full" href="index.html">HOME</a>
+            </li>
+            <li class="pointer relative" onclick="openSubmenu(this)">
+                <a href="javascript:void(0)" class="relative width-full">PRODUCTS</a>
+                <div class="submenu hidden text-white"></div>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="limited.html">LIMITED</a>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="custom.html">CUSTOM</a>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="about.html">ABOUT US</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="bg-light y-padding-30">
+        <div class="x-padding-20 max-w-1440 width-half">
+            <h1 class="text-center">Your cart</h1>
+            <div id="checkout-container" class="width-half y-padding-30">
+
+            </div>
+        </div>
+        <div class="width-half flex flex-col gap-5 align-items-center x-padding-20">
+            <p class="font-lg"><b>Express Checkout</b></p>
+            <div class="flex align-items-center justify-center wrap gap-15">
+                <a class="button bg-dark-green flex" href="#">
+                    <img class="invert-colors align-self-center" src="img/shoppay.png" width="80px">
+                </a>
+                <a class="button bg-dark-green flex" href="#">
+                    <img class="invert-colors align-self-center" src="img/amazon.png" width="80px">
+                </a>
+                <a class="button bg-dark-green flex" href="#">
+                    <img class="invert-colors align-self-center" src="img/paypal.png" width="80px">
+                </a>
+            </div>
+        </div>
+        <p class="font-lg text-center y-padding-30 text-gray">- OR -</p>
+        <form class="max-w-1440 x-padding-20 flex flex-col gap-15 width-half" name="checkout">
+            <p class="font-lg text-center">Contact information</p>
+            <div class="flex gap-5">
+                <input id="first-name" class="width-full" type="text" name="fname" placeholder="First Name">
+                <input id="last-name" class="width-full" type="text" name="lname" placeholder="Last Name">
+            </div>
+            <input id="address" type="text" name="address" placeholder="Address">
+            <div class="flex gap-5">
+                <input id="postal" class="width-full" type="text" name="postal" placeholder="Postal code">
+                <input id="city" class="width-full" type="text" name="city" placeholder="City">
+            </div>
+            <input id="phone" type="text" placeholder="Phone">
+            <button type="submit" class="button bg-dark-green text-white align-self-center font-lg" onclick="sendData(event)">Send data</button>
+        </form>
+    </main>
+    <footer class="flex flex-col gap-15 text-white align-items-center y-padding-30">
+        <div class="flex gap-15 small-flex-col">
+            <div class="flex flex-col gap-5">
+                <p class="text-lg"><b>NEWSLETTER</b></p>
+                <p class="uppercase font-s">Join our infrequently used, <br> only on special occasions, non-spammy newsletter.</p>
+                <div class="flex gap-5">
+                    <input type="text">
+                    <button class="button pointer bg-dark-green text-white transition" type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div>
+                    <p class="text-lg"><b>CONTACT US</b></p>
+                    <a href="mailto:hello@studioq.com">hello@studioq.com</a>
+                    <p>PHONE: 0498 4568456 543</p>
+                </div>
+                <div>
+                    <p>P.O. Box 90723 </p>
+                    <p>Austin, TX 78709-0723</p>
+                    <p>USA</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <p><b>FOLLOW US</b></p>
+                <a class="hover-underline" href="#">FACEBOOK</a>
+                <a class="hover-underline" href="#">TWITTER</a>
+                <a class="hover-underline" href="#">PODCAST</a>
+                <a class="hover-underline" href="#">INSTAGRAM</a>
+            </div>
+        </div>
+        <p>Copyright 2023 Studio Q.</p>
+    </footer>
+</body>
+<script src="js/sidebar.js"></script>
+<script src="js/fetchSubmenus.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+</html>

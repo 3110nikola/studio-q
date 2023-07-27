@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Studio Q</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/typography.css">
+    <link rel="stylesheet" href="style/media-queries.css">
+</head>
+<body class="bg-black">
+    <header class="flex justify-space align-items-center max-w-1440 text-white">
+        <a href="index.html" class="flex gap-15 align-items-center">
+            <img class="invert-colors logo" width="80px" src="img/logo.png">
+            <span class="font-xl">Studio Q</span>
+        </a>
+        <ul class="flex gap-15 font-lg navbar">
+            <li class="relative submenu-container hover-underline">
+                <a href="javascript:void(0)" class="relative">PRODUCTS</a>
+                <div class="hidden absolute submenu"></div>
+            </li>
+            <li class="hover-underline">
+                <a href="limited.html">LIMITED</a>
+            </li>
+            <li class="hover-underline">
+                <a href="custom.html">CUSTOM</a>
+            </li>
+            <li class="hover-underline">
+                <a href="about.html">ABOUT US</a>
+            </li>
+            <li class="cart-button hover-underline">
+                <a href="javascript:void(0)">CART (<span class="counter"></span>)</a>
+            </li>
+        </ul>
+        <div id="sidebar-toggle" class="pointer flex-col gap-5 justify-center relative transition">
+            <img src="img/toggle-line.png" width="20" id="line-1" class="transition">
+            <img src="img/toggle-line.png" width="20" id="line-2" class="transition">
+        </div>
+    </header>
+    <nav id="sidebar" class="hidden bg-white">
+        <ul class="flex flex-col font-lg">
+            <li class="pointer">
+                <a class="width-full" href="index.html">HOME</a>
+            </li>
+            <li class="pointer relative" onclick="openSubmenu(this)">
+                <a href="javascript:void(0)" class="relative width-full">PRODUCTS</a>
+                <div class="submenu hidden text-white"></div>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="limited.html">LIMITED</a>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="custom.html">CUSTOM</a>
+            </li>
+            <li class="pointer">
+                <a class="width-full" href="about.html">ABOUT US</a>
+            </li>
+            <li class="pointer cart-button">
+                <a class="width-full" href="javascript:void(0)">CART (<span class="counter"></span>)</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="flex flex-col gap-5 justify-space bg-light cart transition">
+        <div>
+            <p class="font-lg text-center">YOUR CART</p>
+            <hr>
+        </div>
+        <div id="cart-products-container" class="flex-grow-1 y-scroll">
+        </div>
+        <div class="flex flex-col gap-5">
+            <div class="flex justify-space">
+                <p>Subtotal</p>
+                <p id="subtotal"></p>
+            </div>
+            <div class="flex gap-5">
+                <button id="checkout" class="button bg-dark-green transition text-white basis-1-3" onclick="checkout()">Checkout</button>
+                <button class="button basis-1-3" id="empty-cart">Empty Cart</button>
+                <button class="button basis-1-3" id="close-cart">Close</button>
+            </div>
+        </div>
+    </section>
+    <div>
+        <img src="img/about.jpg" width="100%">
+    </div>
+    <main class="bg-light y-padding-30">
+        <div class="max-w-1440">
+            <div class="x-padding-20 width-half flex flex-col gap-15">
+                <h1 class="font-xl text-center">About Us</h1>
+                <p class="font-lg">Studio Q was founded in 2010 by Artur Ingham and Andrew Flynn. We are two designers who enjoy making simple products that solve problems.</p>
+                <p>We like to think of ourselves, in the Kottke parlance, as a small batch business. Our focus is not on growth at all costs, but rather making truly great and useful products in a sustainable way. Walt Disney once said: “We don’t make movies to make money. We make money to make more movies.” That idea speaks to us.</p>
+                <p>The Glif, our first product back in 2010, represented a new way of approaching consumer products, and it wouldn't have been possible without a few thousand people who believed in us. Launched when few people had even heard of Kickstarter, the Glif was the first consumer tech product to reach such a high level of funding and acclaim on the crowdfunding site. Exceeding our initial goal by over 10×, Studio Q, as a company, was born.</p>
+                <p>Over the years, we have created all kinds of different products. You might even look at those products and deem it a bit capricious. The same company that makes an iPhone tripod mount also makes an app for managing your cocktail recipes? To us, it's all about solving interesting problems and delighting our customers. This is our guiding light.</p>
+                <p>While our story may seem unique, the world now more than ever has allowed for such a story to be possible. We love to share our experiences, either through talks, our podcast, or our mentorship program, to hopefully inspire others to forge a similar path. There isn't a better time than now.</p>
+                <p>We are in it for the long haul. We are not interested in venture funding or being acquired. We have been profitable since day one and we intend to keep that going. And we owe it all to our amazing customers and backers. Thanks for your continued support!</p>
+            </div>
+            <div class="flex wrap justify-center gap-15 y-padding-30">
+                <div class="flex flex-col gap-5 align-items-center">
+                    <img src="img/artur.png" class="circle bg-white" width="120px">
+                    <p class="font-lg text-center"><b>Artur Ingham</b></p>
+                    <p class="font-lg text-center">Co-founder</p>
+                </div>
+                <div class="flex flex-col gap-5 align-items-center">
+                    <img src="img/andrew.png" class="circle bg-white" width="120px">
+                    <p class="font-lg text-center"><b>Andrew Flynn</b></p>
+                    <p class="font-lg text-center">Co-founder</p>
+                </div>
+                <div class="flex flex-col gap-5 align-items-center">
+                    <img src="img/dorina.png" class="circle bg-white" width="120px">
+                    <p class="font-lg text-center"><b>Dorina Giardina</b></p>
+                    <p class="font-lg text-center">Assembly</p>
+                </div>
+                <div class="flex flex-col gap-5 align-items-center">
+                    <img src="img/roman.png" class="circle bg-white" width="120px">
+                    <p class="font-lg text-center"><b>Roman Wolters</b></p>
+                    <p class="font-lg text-center">Customer Service</p>
+                </div>
+                <div class="flex flex-col gap-5 align-items-center">
+                    <img src="img/lina.png" class="circle bg-white" width="120px">
+                    <p class="font-lg text-center"><b>Lina Matveeva</b></p>
+                    <p class="font-lg text-center">Assembly</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex flex-col gap-15 text-white align-items-center y-padding-30">
+        <div class="flex gap-15 small-flex-col">
+            <div class="flex flex-col gap-5">
+                <p class="text-lg"><b>NEWSLETTER</b></p>
+                <p class="uppercase font-s">Join our infrequently used, <br> only on special occasions, non-spammy newsletter.</p>
+                <div class="flex gap-5">
+                    <input type="text">
+                    <button class="button pointer bg-dark-green text-white transition" type="submit">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div>
+                    <p class="text-lg"><b>CONTACT US</b></p>
+                    <a href="mailto:hello@studioq.com">hello@studioq.com</a>
+                    <p>PHONE: 0498 4568456 543</p>
+                </div>
+                <div>
+                    <p>P.O. Box 90723 </p>
+                    <p>Austin, TX 78709-0723</p>
+                    <p>USA</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5">
+                <p><b>FOLLOW US</b></p>
+                <a class="hover-underline" href="#">FACEBOOK</a>
+                <a class="hover-underline" href="#">TWITTER</a>
+                <a class="hover-underline" href="#">PODCAST</a>
+                <a class="hover-underline" href="#">INSTAGRAM</a>
+            </div>
+        </div>
+        <p>Copyright 2023 Studio Q.</p>
+    </footer>
+</body>
+<script src="js/sidebar.js"></script>
+<script src="js/fetchSubmenus.js"></script>
+<script src="js/cart.js"></script>
+</html>

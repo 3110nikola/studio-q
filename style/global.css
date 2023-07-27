@@ -1,0 +1,331 @@
+:root {
+    --alpha: 1;
+    --disableZ: -10;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body:before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: var(--disableZ);
+    content: '';
+}
+
+header {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    padding: 5px;
+}
+
+select {
+    padding: 10px;
+    background-color: white;
+    border: 1px #444 solid;
+    border-radius: 10px;
+}
+
+img {
+    display: block;
+}
+
+.list-disc {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.basis-half {
+    flex-basis: 50%;
+}
+
+.basis-1-3 {
+    flex-basis: calc(100% / 3);
+}
+
+.gap-5 {
+    gap: 5px !important;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.width-full {
+    width: 100%;
+    display: block;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 0 10px;
+    gap: 70px;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.grid-product {
+    padding: 10px;
+    border-radius: 20px;
+    --alpha: 0;
+}
+
+.grid-product:hover {
+    --alpha: 0.4;
+}
+
+.max-w-1440 {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-light {
+    background-color: #f4f1ea;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-dark-green {
+    background-color: rgba(0, 87, 84, var(--alpha));
+}
+
+.submenu-container:hover > .submenu {
+    display: block;
+}
+
+.submenu-link {
+    background-color: #444;
+    padding: 5px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.submenu-link:hover {
+    background-color: #666;
+}
+
+.invert-colors {
+    filter: invert(1);
+}
+
+.home-hero {
+    background: url('../img/limited-hero.png') bottom/cover;
+    padding: 400px 0 50px 0; 
+}
+
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+.button:hover {
+    --alpha: 0.8;
+}
+
+.inactive {
+    filter: grayscale(1);
+    pointer-events: none;
+}
+
+.circle {
+    border-radius: 50%;
+    border: solid 4px #eee;
+}
+
+.y-padding-30 {
+    padding: 30px 0;
+}
+
+.x-padding-20 {
+    padding: 0 20px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bottom-gradient {
+    background-image: url('../img/bottom-gradient.webp');
+    width: 100%;
+    height: 20%;
+    left: 0;
+    bottom: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.transition {
+    transition: 0.5s;
+}
+
+.centering {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.no-space {
+    white-space: nowrap;
+}
+
+.home-bio {
+    background: url('../img/handshake.jpg') center/cover;
+    height: 600px;
+}
+
+.bio-circle {
+    width: 310px;
+    height: 310px;
+    padding: 50px;
+    --alpha: 0.8;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
+.images-circle {
+    padding: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 50%;
+}
+
+.images-circle.active {
+    background-color: #eee;
+    padding: 7px;
+}
+
+.cart {
+    position: fixed;
+    right: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100% - 30px);
+    width: 50%;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    z-index: 50;
+    box-sizing: border-box;
+}
+
+.cart.active {
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.empty-bg {
+    background: no-repeat center/300px url('../img/empty.png');
+}
+
+.y-scroll {
+    overflow-y: scroll;
+}
+
+#sidebar li {
+    border-bottom: #444 1px solid;
+    padding: 2px;
+}
+
+#sidebar li:hover {
+    background-color: #444;
+    color: white;
+}
+
+#sidebar-toggle {
+    display: none;
+    height: 40px;
+    width: 40px;
+    align-items: end;
+}
+
+#line-1.active {
+    transform: rotate(45deg);
+}
+
+#line-2.active {
+    transform: rotate(-45deg);
+}

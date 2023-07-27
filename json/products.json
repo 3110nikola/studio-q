@@ -1,0 +1,264 @@
+[
+    {
+        "Id": "markone",
+        "Title": "Mark One",
+        "ShortDescription": "A Minimal, Durable, Retractable Pen",
+        "LongDescription": "Mark One is a custom machined, all-metal, retractable pen with a ceramic based exterior coating for long lasting durability. It’s built for our favorite rollerball refill, and has a satisfying-as-heck custom click mechanism.",
+        "Variants": [
+            {
+                "Name": "Black + Nickel",
+                "Price": "75"
+            },
+            {
+                "Name": "Black + Copper",
+                "Price": "80"
+            },
+            {
+                "Name": "White + Copper",
+                "Price": "90"
+            },
+            {
+                "Name": "White + Nickel",
+                "Price": "85"
+            }
+        ],
+        "Images": [
+            "img/markone/overview.webp",
+            "img/markone/detail_black_tip.webp",
+            "img/markone/detailBs.webp",
+            "img/markone/detailBc.webp",
+            "img/markone/detail_white_tip.webp",
+            "img/markone/detailWc.webp",
+            "img/markone/detailWs.webp"
+        ],
+        "Video": "video/markone.mp4"
+    },
+    {
+        "Id": "marktwo",
+        "Title": "Mark Two",
+        "ShortDescription": "A minimal and durable pocket pen",
+        "LongDescription": "Mark Two is a custom machined, all-metal pocket pen small enough to take with you, but extends to a full length when in use. Built to last a lifetime, it comes with a special mini version of our favorite rollerball refill.",
+        "Variants": [
+            {
+                "Name": "Silver",
+                "Price": "110"
+            },
+            {
+                "Name": "Black",
+                "Price": "125"
+            }
+        ],
+        "Images": [
+            "img/marktwo/overview-blackweb.webp",
+            "img/marktwo/overview-silverweb.webp",
+            "img/marktwo/whiteDetailWeb.webp",
+            "img/marktwo/mk2white.webp"
+        ],
+        "Video": "video/marktwo.mp4"
+    },
+    {
+        "Id": "materialdock",
+        "Title": "Material Dock",
+        "ShortDescription": "Wood Docks for MagSafe",
+        "LongDescription": "Turn your MagSafe connector into a stationary dock for your iPhone. These bring-your-own-cable walnut docks create a lovely place to charge your iPhone, AirPods, and Apple Watch.",
+        "Variants": [
+            {
+                "Name": "Trio (iPhone, AirPods, and Apple Watch)",
+                "Price": "85"
+            },
+            {
+                "Name": "Upright Duo (iPhone and AirPods)",
+                "Price": "54"
+            },
+            {
+                "Name": "Duo (iPhone and Apple Watch)",
+                "Price": "48"
+            },
+            {
+                "Name": "Solo (iPhone)",
+                "Price": "24"
+            }
+        ],
+        "Images": [
+            "img/materialdock/overview.webp",
+            "img/materialdock/overview2.webp",
+            "img/materialdock/overview3.webp",
+            "img/materialdock/overviewDevice.webp",
+            "img/materialdock/overviewDevices.webp",
+            "img/materialdock/overviewDevices2.webp",
+            "img/materialdock/overviewDevices3.webp",
+            "img/materialdock/overviewDevices4.webp"
+        ],
+        "Video": "video/materialdock.mp4"
+    },
+    {
+        "Id": "panobook",
+        "Title": "Panobook",
+        "ShortDescription": "A Notebook for Your Desk",
+        "LongDescription": "Panobook is a panoramic notebook for your desk, and eventually, your shelf. Made of quality materials and thoughtful details, and includes a slipcase for archiving when you’re finished.",
+        "Variants": [
+            {
+                "Name": "1 - $20 each",
+                "Price": "20"
+            },
+            {
+                "Name": "6 - $19 each",
+                "Price": "114"
+            },
+            {
+                "Name": "12 - $18 each",
+                "Price": "216"
+            }
+        ],
+        "Images": [
+            "img/panobook/slip-case-detail.jpg",
+            "img/panobook/spine-detail.webp",
+            "img/panobook/top-coverDetail.jpg",
+            "img/panobook/top-cover-grande.webp",
+            "img/panobook/top-pages-zoom.webp",
+            "img/panobook/top-sleeve.webp",
+            "img/panobook/top-spread.webp",
+            "img/panobook/top-title-detail.jpg"
+        ],
+        "Video": "video/panobook.mp4"
+    },
+    {
+        "Id": "panopad",
+        "Title": "Panopad",
+        "ShortDescription": "A Panoramic Scratch Pad for Your Desk.",
+        "LongDescription": "Panopad is a low profile, large format sticky pad for your desk. Made of quality paper and a thoughtful dot grid, use it as a scratch pad or to stick your ideas to the wall. Comes as a 2-pack.",
+        "Price": "20",
+        "Images": [
+            "img/panopad/overview.webp",
+            "img/panopad/top.webp",
+            "img/panopad/dotgrid.webp",
+            "img/panopad/dotpeel.webp"
+        ],
+        "Video": "video/panopad.mp4"
+    },
+    {
+        "Id": "totebook",
+        "Title": "Totebook",
+        "ShortDescription": "A Notebook to Take With You",
+        "LongDescription": "Totebook is a thin, light, and flexible notebook, perfect for tucking in your bag to bring with you. Made of quality materials and thoughtful details, and includes a spine sticker for labeling and archiving. Comes in two sizes.",
+        "Price": "20",
+        "Images": [
+            "img/totebook/overview.webp",
+            "img/totebook/topboth.webp",
+            "img/totebook/binding.webp",
+            "img/totebook/open.webp",
+            "img/totebook/back.webp",
+            "img/totebook/sticker.webp",
+            "img/totebook/endsheet.webp",
+            "img/totebook/front.webp"
+        ],
+        "Video": "video/totebook.mp4"
+    },
+    {
+        "Id": "glif",
+        "Title": "Glif",
+        "ShortDescription": "A Tripod Mount for Smartphones",
+        "LongDescription": "The all-new and completely redesigned version of the Glif holds your smartphone securely in portrait or landscape with a quick release lever, and includes three tripod mounts for additional accessories.",
+        "Variants": [
+            {
+                "Name": "Glif Only (Backordered)",
+                "Price": "28"
+            },
+            {
+                "Name": "Full Set (Glif + Hand Grip + Wrist Strap)",
+                "Price": "55"
+            }
+        ],
+        "Images": [
+            "img/glif/sidel.webp",
+            "img/glif/tripod-fade.webp",
+            "img/glif/portrait.webp",
+            "img/glif/back.webp",
+            "img/glif/slider.webp",
+            "img/glif/set.webp",
+            "img/glif/handle.webp",
+            "img/glif/strap.webp"
+        ],
+        "Video": "video/glif.mp4"
+    },
+    {
+        "Id": "canopy",
+        "Title": "Canopy",
+        "ShortDescription": "Keyboard Case and iPad Stand",
+        "LongDescription": "Canopy is a case for your Apple Magic Keyboard that folds open to create a stand for your iPad or iPhone. Now you can use a full size, honest-to-god keyboard with your device.",
+        "Price": "40",
+        "Images": [
+            "img/canopy/propedAngle.webp",
+            "img/canopy/propedAngle-ipad.webp",
+            "img/canopy/folded-side.webp",
+            "img/canopy/unfolded.webp",
+            "img/canopy/proped-side.webp",
+            "img/canopy/folded-top.webp"
+        ],
+        "Video": "video/canopy.mp4"
+    },
+    {
+        "Id": "cosmonaut",
+        "Title": "Cosmonaut",
+        "ShortDescription": "Wide-Grip Stylus for Touchscreens",
+        "LongDescription": "The Cosmonaut was born out of our desire to have a really great stylus for our iPads. A stylus that just feels right.",
+        "Price": "25",
+        "Images": [
+            "img/cosmonaut/cosmo.webp",
+            "img/cosmonaut/cosmo1.webp",
+            "img/cosmonaut/cosmo2.webp",
+            "img/cosmonaut/cosmo3.webp",
+            "img/cosmonaut/cosmo4.webp",
+            "img/cosmonaut/cosmo5.webp",
+            "img/cosmonaut/cosmo6.webp"
+        ],
+        "Video": "video/cosmonaut.mp4"
+    },
+    {
+        "Id": "tvremote",
+        "Title": "Apple TV Remote Stand",
+        "ShortDescription": "Walnut Stand for the Apple TV Remote",
+        "LongDescription": "You're going to lose your remote. We made this little walnut stand so your Apple TV remote always has a home. Peace of mind.",
+        "Price": "15",
+        "Images": [
+            "img/tvremote/whitefront.webp",
+            "img/tvremote/whiteside.webp",
+            "img/tvremote/whitetop.webp",
+            "img/tvremote/blackfront.webp",
+            "img/tvremote/atvs-side.webp",
+            "img/tvremote/atvs-top.webp"
+        ],
+        "Video": "video/tvremote.mp4"
+    },
+    {
+        "Id": "Highball",
+        "Title": "Highball",
+        "ShortDescription": "Share and Collect Cocktail Recipes",
+        "LongDescription": "Highball is an iPhone app for collecting and sharing cocktail recipes. Choose the ingredients, add a description, and create a custom drink image, then share as a beautiful recipe card.",
+        "Price": "0",
+        "Images": [
+            "img/highball/hb1.png",
+            "img/highball/hb2.png",
+            "img/highball/hb3.png",
+            "img/highball/hb4.png"
+        ],
+        "Logo": "img/highball/logo.webp",
+        "Video": "video/highball.mp4",
+        "AppLink": "#"
+    },
+    {
+        "Id": "slowfastslow",
+        "Title": "SLOW FAST SLOW",
+        "ShortDescription": "Control the Speed of Your iPhone Videos",
+        "LongDescription": "Slow Fast Slow is a simple iPhone app that allows you to manipulate the speed of videos you shoot on your iPhone using an intuitive and fun interface.",
+        "Price": "0",
+        "Images": [
+            "img/slowfastslow/sfs1.png",
+            "img/slowfastslow/sfs2.png",
+            "img/slowfastslow/sfs3.png",
+            "img/slowfastslow/sfs4.png"
+        ],
+        "Logo": "img/slowfastslow/logo.webp",
+        "AppLink": "#"
+    }
+]
