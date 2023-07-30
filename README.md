@@ -15,4 +15,4 @@ To run Studio Q locally on your machine, it is recommended to use Live Server to
 
 ## Disclaimer
 
-This project includes images sourced from Studio Neat (https://www.studioneat.com) for educational and non-commercial purposes. I do not claim ownership of these images, and they remain the intellectual property of Studio Neat.
+This project includes materials (e.g. images) sourced from Studio Neat (https://www.studioneat.com) for educational and non-commercial purposes. I do not claim ownership of these images, and they remain the intellectual property of Studio Neat.
